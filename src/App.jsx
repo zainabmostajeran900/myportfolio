@@ -13,7 +13,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Link } from "react-scroll";
 import { useInView } from "react-intersection-observer";
-const ProjectDetails = React.lazy(() => import('./components/ProjectDetails'));
+const ProjectDetails = React.lazy(() => import('./components/ProjectDetails.jsx'));
 import ProjectsArchive from "./components/ProjectsArchive";
 import ScrollToTop from "./components/ScrollToTop";
 
