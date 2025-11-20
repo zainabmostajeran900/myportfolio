@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import NavbarPortfolio from "../components/NavbarPrtfolio";
+import NavbarPortfolio from "./NavbarPrtfolio";
 import Footer from "./Footer";
 
 const images = [
