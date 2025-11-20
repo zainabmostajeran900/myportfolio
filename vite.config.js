@@ -11,4 +11,15 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+    build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'react-vendors': ['react', 'react-dom', 'react-router-dom'],
+          'radix-ui': ['@radix-ui/react-dropdown-menu', '@radix-ui/react-toggle'],
+          'swiper': ['swiper']
+        }
+      }
+    }
+  }
 })
