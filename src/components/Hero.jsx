@@ -14,7 +14,7 @@ export function Hero() {
         <p className="py-4 rounded-md px-3 text-sm bg-white shadow-sm dark:bg-[var(--color-bg2)] transition-colors duration-500">
           بهترین ها از بهترین تصمیم حاصل می شود
         </p>
-        <h2 className="text-xl sm:text-3xl font-bold">
+        <h2 className="text-lg text-nowrap sm:text-3xl font-bold">
           سلام من زینب مستاجران هستم
         </h2>
         <h2 className="text md:text-2xl">برنامه نویس وتوسعه دهنده فرانت اند</h2>
@@ -30,7 +30,7 @@ export function Hero() {
         </button>
       </div>
       <img
-        className="w-full sm:w-[280px] h-[600px] rounded-b-lg object-cover rounded-r-[200px] rounded-l-lg pt-36"
+        className="w-full sm:w-[280px] h-[600px] rounded-b-lg object-cover rounded-r-[200px] rounded-l-lg  md:pt-36"
         src="/hero-1.jpg"
         alt=""
       />

@@ -104,7 +104,7 @@ function NavbarPortfolio() {
 
           {/* Right side (سه نقطه موبایل) */}
           <div className="flex items-center gap-2 order-3 sm:order-none">
-            <button onClick={toggleSidebar} className="text-white md:hidden">
+            <button onClick={toggleSidebar} className="dark:text-white text-black md:hidden">
               <BsThreeDotsVertical size={20} />
             </button>
           </div>

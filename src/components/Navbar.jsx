@@ -104,7 +104,7 @@ function Navbar() {
 
       {/* Navbar */}
       <div
-        className={`fixed top-3 right-0 left-0 container mx-auto max-w-[1200px] transition-opacity duration-300 px-4 sm:px-8 rounded-lg 
+        className={`fixed top-3 right-3 left-3 md:left-0 md:right-0 md:max-w-[1200px] md:container md:mx-auto  transition-opacity duration-300 px-4 sm:px-8 rounded-lg 
   ${
     isSidebarOpen ? "opacity-50 z-30" : "opacity-100 z-40"
   } bg-white  dark:bg-[var(--color-bg2)] shadow-md `}
@@ -115,19 +115,19 @@ function Navbar() {
             <div className="flex sm:hidden">
               <ModeToggle />
             </div>
-            <button onClick={toggleMobileMenu} className="text-white md:hidden">
+            <button onClick={toggleMobileMenu} className="dark:text-white text-black md:hidden">
               <GiHamburgerMenu size={20} />
             </button>
           </div>
 
           {/* Logo */}
-          <div className="text-black dark:text-white font-bold text-xl order-2 sm:order-none text-center">
+          <div className="text-black dark:text-white font-bold text-lg md:text-xl order-2 sm:order-none text-center">
             زینب مستاجران
           </div>
 
           {/* Right side (سه نقطه موبایل) */}
           <div className="flex items-center gap-2 order-3 sm:order-none">
-            <button onClick={toggleSidebar} className="text-white md:hidden">
+            <button onClick={toggleSidebar} className="dark:text-white text-black md:hidden">
               <BsThreeDotsVertical size={20} />
             </button>
           </div>
