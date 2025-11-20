@@ -11,7 +11,7 @@ export function Hero() {
         alt=""
       />
       <div className="flex flex-col gap-y-3 items-center p-6 rounded-2xl">
-        <p className="py-4 rounded-md px-3 text-sm bg-white shadow-sm dark:bg-[var(--color-bg2)] transition-colors duration-500">
+        <p className="py-4 rounded-md px-3 text-sm text-nowrap bg-white shadow-sm dark:bg-[var(--color-bg2)] transition-colors duration-500">
           بهترین ها از بهترین تصمیم حاصل می شود
         </p>
         <h2 className="text-lg text-nowrap sm:text-3xl font-bold">
