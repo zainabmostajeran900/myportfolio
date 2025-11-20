@@ -1,5 +1,6 @@
+// Re-export default from the correctly-cased file so existing imports keep working
 import { useParams } from "react-router-dom";
-import NavbarPortfolio from "./NavbarPrtfolio";
+import NavbarPortfolio from "../components/NavbarPrtfolio";
 import Footer from "./Footer";
 
 const images = [
@@ -42,7 +43,7 @@ const ProjectDetails = () => {
     <>
     
       {/* کانتینر اصلی → کل صفحه + بک‌گراند کامل */}
-      <div className="min-h-screen flex flex-col  dark:bg-[var(--color-bg1)] text-black dark:text-white px-4">
+      <div className="min-h-screen flex flex-col  dark:bg-[var(--color-bg)] text-black dark:text-white px-4">
         {/* محتوای اصلی */}
           <NavbarPortfolio />
         <main className="flex-1 flex flex-col items-center justify-start w-full overflow-x-hidden px-6 pb-20">

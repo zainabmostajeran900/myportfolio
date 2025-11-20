@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -13,7 +13,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Link } from "react-scroll";
 import { useInView } from "react-intersection-observer";
-const ProjectDetails = React.lazy(() => import('./components/ProjectDetails.jsx'));
+const ProjectDetails = React.lazy(() => import('./components/Projectdetails'));
 import ProjectsArchive from "./components/ProjectsArchive";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -81,11 +81,13 @@ function App() {
       <QueryClientProvider client={queryClient}>
         <Router>
           <ScrollToTop />
-          <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route path="/archive" element={<ProjectsArchive />} />
-            <Route path="/project/:id" element={<ProjectDetails />} />
-          </Routes>
+          <Suspense fallback={<div className="text-white p-6">در حال بارگذاری...</div>}>
+            <Routes>
+              <Route path="/" element={<MainPage />} />
+              <Route path="/archive" element={<ProjectsArchive />} />
+              <Route path="/project/:id" element={<ProjectDetails />} />
+            </Routes>
+          </Suspense>
         </Router>
       </QueryClientProvider>
     </ThemeProvider>
